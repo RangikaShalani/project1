@@ -1,0 +1,36 @@
+package First_Ass
+
+object Assingment {
+
+//Qustion 01
+//35C, convert into Fahrenheit
+  def temper(C:Int):Double={
+    var F:Double =0.0
+    F=C*1.8000+32.00
+    return F
+  }
+
+//Qustion 02
+//The volume of a sphere with radius 5
+  def volume(radiue:Int):Double={
+    var Totel=(4.00)/(3.00)*math.Pi* math.pow(radiue,3)
+    return Totel
+  }
+//Qustion 03
+//Total bokk wholesale cost of 60 copies
+  def BookPrice(book:Double,coppy:Int):Double={
+    var discount=(book) -( book*40.0/100.0)
+    var shipping=3+ (coppy-50)*0.75
+    var Tprice=discount*coppy+shipping
+    return Tprice
+  }
+  def main(args: Array[String]): Unit = {
+    println("\nQustion 01")
+    println("Fahrenheit is : "+temper(C = 35) +"F")
+    println("\nQustion 02")
+    println("Volume is : "+volume(radiue = 5) )
+    println("\nQustion 03")
+    println("Price of wholesale is : "+BookPrice(book=24.95,coppy=60))
+
+  }
+}
